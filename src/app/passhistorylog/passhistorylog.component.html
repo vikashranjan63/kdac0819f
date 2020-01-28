@@ -1,0 +1,26 @@
+
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Id </th>
+        <th>UserId</th>
+        <th>ChangedOn</th>
+        <th>OldPassword</th>
+        <th>NewPassword</th>
+     
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let u of passhist">
+        <td>{{u.Id}}</td>
+        <td>{{u.UserId}}</td>
+        <td>{{u.ChangedOn}}</td>
+        <td>{{u.OldPassword}}</td>
+        <td>{{u.NewPassword}}</td>
+        
+      </tr>
+    </tbody>
+  </table>
+</div>
+

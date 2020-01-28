@@ -1,0 +1,27 @@
+
+
+  <form role="form" #myForm="ngForm" (ngSubmit)="Login(myForm.value)" class="text-center border border-light p-5">
+
+     
+     <legend>Sign-In</legend>
+
+                        <button (click)="switchLanguage('en')">English</button>
+                        <button (click)="switchLanguage('ge')">German</button>
+                        <button (click)="switchLanguage('hi')">Hindi</button>
+    <div class="form-group">
+      <label for="name"><h1>{{ "EmailId" | translate }}</h1>
+      </label>
+      <input ngModel type="text" class="form-control" id="name" name="EmailId" required="required">
+    </div>
+    <div class="form-group">
+      <label for="password"><h1>{{ "Password" | translate }}</h1>
+      </label>
+      <input ngModel type="password" class="form-control" id="password" name="password" required="required">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Login</button>
+    <button (click)="cancel()" class="btn btn-danger" style="margin-left: 40px">Cancel</button>
+    <br>
+    <br>
+    <a href="/forgetpass">Forget-Password</a>
+  </form>

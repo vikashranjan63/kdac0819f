@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Credit Card Validation Demo</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   
+</head>
+
+<body>
+    <script>
+        function myfun()
+        {
+            alert("payment successfully");
+        }
+        </script>
+   
+    <div class="container-fluid">
+
+        <div class="creditCardForm">
+            <div class="heading">
+                <h1>Confirm Purchase</h1>
+            </div>
+            <div class="payment">
+           
+                    <div class="form-group owner">
+                        <label for="Name">Name</label>
+                        <input type="text"  class="form-control" id="Name" required="required" placeholder="Enter card holder name">
+                    </div>
+                    <div class="form-group CVV">
+                        <label for="cvv">CVV</label>
+                        <input type="number"   class="form-control" id="cvv" placeholder="only 3 digit number" maxlength="3" minlength="3">
+                    </div>
+                    <div class="form-group" id="card-number-field">
+                        <label for="cardNumber">Card Number</label>
+                        <input type="number"  class="form-control" id="cardNumber" min="" maxlength="16" minlength="16" placeholder="Enter card number">
+                    </div>
+                    <div class="form-group">
+                        <label>Expiration Date</label>
+                        <select >
+                            <option value="01">January</option>
+                            <option value="02">February </option>
+                            <option value="03">March</option>
+                            <option value="04">April</option>
+                            <option value="05">May</option>  
+                            <option value="06">June</option>
+                            <option value="07">July</option>
+                            <option value="08">August</option>
+                            <option value="09">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+                        <select >
+                            <option value="16"> 2016</option>
+                            <option value="17"> 2017</option>
+                            <option value="18"> 2018</option>
+                            <option value="19"> 2019</option>
+                            <option value="20"> 2020</option>
+                            <option value="21"> 2021</option>
+                        </select>
+                    </div>
+                  
+              
+                     
+                   
+                      <div class="form-group" id="credit_cards">
+                        <!-- <img src="App\src\assets\imges\payment.jpg" id="visa">&nbsp;&nbsp;
+                        <img src="assets/images/mastercard.jpg" id="mastercard">&nbsp;&nbsp;
+                        <img src="assets/images/amex.jpg" id="amex"><br><br> -->
+                        <!-- <a href="VisitUs" ><button style="width: 200%; height: 50px; background-color: steelblue;color: white;" onclick="myfun()" >Pay Now</button></a> -->
+                        
+                        <a class="btn btn-success" href="/paydet" role="button">Pay Now</a>
+                        
+                    </div>
+            </div>
+        </div>
+
+        
+    </div>
+</body>
+
+</html>
+

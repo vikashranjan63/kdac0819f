@@ -1,0 +1,36 @@
+<br>
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">RentId</th>
+        <th scope="col">TotalRentDay</th>
+        <th scope="col">DailyRentFee</th>
+        <th scope="col">FuelCharge</th>
+        <th scope="col">Total</th>
+        <th scope="col">Refund</th>
+        <th scope="col">CarId</th>
+        <th scope="col">UserId</th>
+        <th scope="col">ResId</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let u of rentslist">
+        <td>{{u.RentId}}</td>
+        <td>{{u.TotalRentDay}}</td>
+        <td>{{u.DailyRentFee}}</td>
+        <td>{{u.FuelCharge}}</td>
+        <td>{{u.Total}}</td>
+        <td>{{u.Refund}}</td>
+        <td>{{u.CarId}}</td>
+        <td>{{u.UserId}}</td>
+        <td>{{u.ResId}}</td>
+        <td>
+          <button type="button" class="btn btn-success">Update</button>
+        </td>
+
+      </tr>
+    </tbody>
+  </table>
+</div>

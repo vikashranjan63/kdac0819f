@@ -1,0 +1,27 @@
+<br>
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">ResId</th>
+        <th scope="col">ResDate</th>
+        <th scope="col">PickupDate</th>
+        <th scope="col">ReturnDate</th>
+        <th scope="col">CarId</th>
+        <th scope="col">UserId</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let u of reservationlist">
+        <td>{{u.ResId}}</td>
+        <td>{{u.ResDate}}</td>
+        <td>{{u.PickupDate}}</td>
+        <td>{{u.ReturnDate}}</td>
+        <td>{{u.UserId}}</td>
+        <td>{{u.CarId}}</td>
+        <td>{{u.UserId_}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

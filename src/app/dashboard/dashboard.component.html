@@ -1,0 +1,27 @@
+<div class="table-responsive">
+  <table class="table table-hover">
+    <tbody>
+      <tr>
+        <td>
+          <h2>Hello {{name}}</h2>
+          <a routerLink="/dashboard/onlineusers">User Details</a><br>
+          <a routerLink="/dashboard/passchange">Change Password</a><br>
+          <a routerLink="/dashboard/passhistorylog">Password History Log</a>
+          <br>
+          <a routerLink="/dashboard/carlist">Car-List</a>
+          <br>
+          <a routerLink="/dashboard/rentlist">Rent-List</a>
+          <br>
+          <a routerLink="/dashboard/reslist">Reservation</a>
+          <br>
+          <a (click)="logout()" href="/signIn">Sign Out</a>
+        </td>
+        <td>
+          <router-outlet></router-outlet>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+ 

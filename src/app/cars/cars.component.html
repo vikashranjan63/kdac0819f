@@ -1,0 +1,38 @@
+
+<table class="table">
+  <thead>
+    <tr>
+      <!-- <th scope="col">#</th> -->
+      <th scope="col">Car</th>
+      <th scope="col">No</th>
+      <th scope="col">Brand</th>
+      <th scope="col">Type</th>
+      <th scope="col">Stock</th>
+      <th scope="col">Model</th>
+      <th scope="col">SeatQuantity</th>
+      <th scope="col">FuelType</th>
+      <th scope="col">Mileage</th>
+      <th scope="col">DailyPrice</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let p of carslist">
+      <td><img src="http://localhost:52278/Photos/{{p.CarId}}.jpg" alt=""> </td>
+      <td>{{p.CarId}}</td>
+      <td>{{p.Brand}}</td>
+      <td>{{p.Type}}</td>
+      <td>{{p.Stock}}</td>
+      <td>{{p.Model}}</td>
+      <td>{{p.SeatQuantity}}</td>
+      <td>{{p.FuelType}}</td>
+      <td>{{p.Mileage}}</td>
+      <td>{{p.DailyPrice}}</td>
+      <td>
+      <button (click) = "SelectCar(p)" type="button" class="btn btn-primary">Booking</button>
+      </td>
+    </tr>
+
+  </tbody>
+
+

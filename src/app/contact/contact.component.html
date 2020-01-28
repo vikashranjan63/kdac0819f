@@ -1,0 +1,28 @@
+ <form role="form" #myForm="ngForm" (ngSubmit)="Login(myForm.value)" class="text-center border border-light p-5">
+    <legend><b>FeedBack</b></legend>
+
+<!--------------Feedback----------------------------->
+     <div class="form-group">
+       <label for="name">Name</label>
+       <input ngModel type="text" class="form-control" id="name" name="Name" required = "required">
+     </div>
+<!------------------Name------------------------->
+    <div class="form-group">
+      <label for="name">Email-Id</label>
+      <input ngModel type="text" class="form-control" id="name" name="EmailId" required = "required">
+
+    </div>
+<!------------------Email------------------------->
+
+<div class="form-group">
+
+     <textarea ngModel type="text" class="form-control" id="name" name="Message" required="required" rows="5">
+    </textarea>
+
+</div>
+  <!------------------MessageBox------------------------->
+
+    <button type="submit" class="btn btn-primary">Submit</button> 
+  
+    <!------------------Submit Button------------------------->
+</form>

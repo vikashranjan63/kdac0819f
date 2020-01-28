@@ -1,0 +1,45 @@
+
+<div class="table-responsive">
+  <table class="table table-hover">
+    <tbody>
+      <tr>
+        <td>Brand</td>
+        <td> <input type="text" [(ngModel)]="brand"></td>
+      </tr>
+      <tr>
+        <td>Type</td>
+        <td> <input type="text" [(ngModel)]="type"> </td>
+      </tr>
+      <tr>
+        <td>Stock</td>
+        <td> <input type="number" [(ngModel)]="stock"> </td>
+      </tr>
+      <tr>
+        <td>Model</td>
+        <td><input ngModel type="text" [(ngModel)]="model"></td>
+      </tr>
+      <tr>
+        <td>SeatQuantity</td>
+        <td> <input ngModel type="number" [(ngModel)]="seatquantity"> </td>
+      </tr>
+      <tr>
+        <td> FuelType </td>
+        <td> <input ngModel type="text" [(ngModel)]="fueltype"> </td>
+      </tr>
+
+       <tr>
+         <td> Mileage </td>
+         <td> <input ngModel type="number" [(ngModel)]="mileage"> </td>
+       </tr>
+
+        <tr>
+          <td> DailyPrice </td>
+          <td> <input ngModel type="number" [(ngModel)]="dailyprice"> </td>
+        </tr>
+    </tbody>
+  </table>
+  <div>
+    <button type="submit" class="btn btn-primary" style="align-content: center;" [disabled]="!myForm.form.valid"
+      (click)="saveEditedData()">Save</button>
+  </div>
+</div>

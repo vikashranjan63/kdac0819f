@@ -1,0 +1,36 @@
+<div class="table-responsive">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>UserId </th>
+                <th>EmailId</th>
+                <th>Name</th>
+                <th>Password</th>
+                <th>MobileNo</th>
+                <th>IsOnline</th>
+                <th>IsLocked</th>
+                <th>RoleId</th>
+                 <th>
+                    
+                 </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let u of users">
+                <td>{{u.UserId_}}</td>
+                <td>{{u.EmailId}}</td>
+                <td>{{u.Name}}</td>
+                <td>{{u.Password}}</td>
+                <td>{{u.MobileNo}}</td>
+                <td>{{u.IsOnline}}</td>
+                <td>{{u.IsLocked}}</td>
+                <td>{{u.RoleId}}</td>
+                <td>
+                <button type="button" class="btn btn-success">Update</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+

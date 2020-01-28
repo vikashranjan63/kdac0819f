@@ -1,0 +1,30 @@
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">CarId</th>
+            <th scope="col">Brand</th>
+            <th scope="col">Rent</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let p of cars">
+            <td>{{p.CarId}}</td>
+            <td>{{p.Brand}}</td>
+            <td>{{p.DailyPrice}}</td>
+            <td>
+                <input type="date" name="PickupDate" id="PickupDate">
+            </td>
+            <td>
+              <input type="date" name="ReturnDate" id="ReturnDate">
+            </td>
+            <td>
+                <a class="btn btn-primary" href="/payment" role="button">Pay Now</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+

@@ -1,0 +1,47 @@
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">CarId</th>
+        <th scope="col">Brand</th>
+        <th scope="col">Type</th>
+        <th scope="col">Stock</th>
+        <th scope="col">Model</th>
+        <th scope="col">SeatQuantity</th>
+        <th scope="col">FuelType</th>
+        <th scope="col">Mileage</th>
+        <th scope="col">DailyPrice</th>
+        <th>
+        </th>
+        <th>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let u of carslist">
+        <td>{{u.CarId}}</td>
+        <td>{{u.Brand}}</td>
+        <td>{{u.Type}}</td>
+        <td>{{u.Stock}}</td>
+        <td>{{u.Model}}</td>
+        <td>{{u.SeatQuantity}}</td>
+        <td>{{u.FuelType}}</td>
+        <td>{{u.Mileage}}</td>
+        <td>{{u.DailyPrice}}</td>
+
+        <td>
+          <button type="button" class="btn btn-success" (click)="getcar(u.CarId)">Update</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div>
+  
+  <a class="btn btn-info" href="/carlistadd" role="button">ADD</a>
+  
+</div>
+
+
+
+
